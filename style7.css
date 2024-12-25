@@ -1,0 +1,154 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    color: #e0ca9a;
+    line-height: 1.6;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    border-bottom: 2px solid #e0ca9a;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    color: #e0ca9a;
+  }
+  
+  .main-content {
+    padding: 2rem;
+    
+  }
+  
+  .intro-books, .download-books {
+    margin-bottom: 2rem;
+  }
+  
+  .intro-books h2, .download-books h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e0ca9a;
+    padding-bottom: 0.5rem;
+    
+  }
+  
+  .book-list, .download-list {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .book {
+    background-color: #333;
+    padding: 1rem;
+    border: 1px solid #e0ca9a;
+    border-radius: 8px;
+    margin: 50px 50px;
+   
+    
+  }
+
+
+  .book:hover{
+    animation: book 3s ease-in-out infinite;
+  }
+  @keyframes book{
+    0%, 100% {
+        transform: scale(1); /* Default size */
+        opacity: 1; /* Fully visible */
+    }
+    50% {
+        transform: scale(1.1); /* Slight expansion */
+        opacity: 0.9; /* Slight fade */
+    }
+}
+  
+
+    
+    
+  
+  .book h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .book h3 i {
+    color: #e0ca9a;
+    margin-right: 0.5rem;
+  }
+  
+  .book p {
+    font-size: 1rem;
+  }
+  
+  /* Download Section */
+  .download-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 50px;
+  }
+  
+  .download-column {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%; /* Adjust width as needed */
+    background-color: #e0ca9a;
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-btn i {
+    margin-right: 0.5rem;
+  }
+  
+  .download-btn:hover {
+    background-color: #d1b586;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    border-top: 2px solid #e0ca9a;
+  }
+  

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style6.css">
+</head>
+
+<body>
+
+
+    <div class="navigation">
+        <ul>
+            <li class="list active">
+                <a href="index5.html">
+                    <span class="icon">
+                        <!-- <ion-icon name="home-outline"></ion-icon> -->
+                        <ion-icon name="home"></ion-icon>
+                    </span>
+                    <span class="text">Home</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="index6.html">
+                    <span class="icon">
+                        <!-- <ion-icon name="person-outline"></ion-icon> -->
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <span class="text">Contact</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+            
+            <li class="list">
+                <a href="index7.html">
+                    <span class="icon">
+                        <!-- <ion-icon name="chatbubble-outline"></ion-icon> -->
+                        <ion-icon name="book"></ion-icon>
+
+                    </span>
+                    <span class="text">Books</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <!-- <ion-icon name="camera-outline"></ion-icon> -->
+                        <ion-icon name="camera"></ion-icon>
+                    </span>
+                    <span class="text">Photos</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <!-- <ion-icon name="settings-outline"></ion-icon> -->
+                        <ion-icon name="settings"></ion-icon>
+                    </span>
+                    <span class="text">Settings</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </div>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        const list = document.querySelectorAll('.list');
+
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+        }
+
+        list.forEach((item) =>
+            item.addEventListener('click', activeLink));
+    </script>
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="contact-info">
+        <div class="container">
+            <h1>Contact Information</h1>
+            <div class="info-container">
+                <div class="info-box">
+                    <h3>Our Office</h3>
+                    <p>1234 Street Name, City, Country</p>
+                </div>
+                <div class="info-box">
+                    <h3>Email Us</h3>
+                    <p><a href="mailto:info@yourcompany.com">info@yourcompany.com</a></p>
+                </div>
+                <div class="info-box">
+                    <h3>Call Us</h3>
+                    <p><a href="tel:+1234567890">+123-456-7890</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+   
+ <div class="map-container">
+
+  
+    <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.420710642406!2d51.38897331513362!3d35.68919798019257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e016ad2b8d9d1%3A0x6f6ffde8f10da845!2sTehran%2C%20Iran!5e0!3m2!1sen!2sus!4v1696169392431!5m2!1sen!2sus" 
+    width="600" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy">
+</iframe>
+</div>
+
+  
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>We are a team of passionate individuals working on innovative solutions for the future.</p>
+                </div>
+        
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index5.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="index7.html">Books</a></li>
+                        <li><a href="index6.html">Contact</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <ul class="social-links">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="footer-bottom">
+                <p class="p22">&copy; 2024 Your Company. All rights reserved.</p>
+            </div>
+        </footer>
+        
+        
+        
+</body>
+</html>

@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dr abozar shahpari</title>
+    <link rel="stylesheet" href="style5.css">
+    <link href="https://fonts.googleapis.com/css2?family=Iran+Yekan&display=swap" rel="stylesheet">
+
+    <style>
+           .rtl {
+            direction: rtl;
+            font-family: 'Tahoma', sans-serif; /* Persian-friendly font */
+        }
+
+
+
+        #toggle-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #e0ca9a;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            left: 40%;
+            
+        }
+
+        #toggle-btn:hover {
+            background-color: #b3a27d;
+            transform: scale(1.05);
+        }
+
+        #toggle-btn:active {
+            transform: scale(0.95);
+        }
+
+
+
+    </style>
+ 
+</head>
+
+<body>
+
+
+
+
+     
+  
+ 
+    
+
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="navigation">
+        <ul>
+            <li class="list active">
+                <a href="#">
+                    <span class="icon">
+                        <!-- <ion-icon name="home-outline"></ion-icon> -->
+                        <ion-icon name="home"></ion-icon>
+                    </span>
+                    <span class="text">Home</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="index6.html">
+                    <span class="icon">
+                        <!-- <ion-icon name="person-outline"></ion-icon> -->
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <span class="text">Contact</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+            
+            <li class="list">
+                <a href="insex7.html">
+                    <span class="icon">
+                        <!-- <ion-icon name="chatbubble-outline"></ion-icon> -->
+                        <ion-icon name="book"></ion-icon>
+
+                    </span>
+                    <span class="text">Books</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <!-- <ion-icon name="camera-outline"></ion-icon> -->
+                        <ion-icon name="camera"></ion-icon>
+                    </span>
+                    <span class="text">Photos</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <!-- <ion-icon name="settings-outline"></ion-icon> -->
+                        <ion-icon name="settings"></ion-icon>
+                    </span>
+                    <span class="text">Settings</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </div>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        const list = document.querySelectorAll('.list');
+
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+        }
+
+        list.forEach((item) =>
+            item.addEventListener('click', activeLink));
+    </script>
+
+    <!--sliderrrrrrr-->
+
+
+
+
+    <div class="slider">
+
+        <div class="nav">
+          <div class="next"></div>
+          <div class="prev"></div>
+          <div class="explore-btn">Explore</div>
+        </div>
+        <div class="item is-active">
+          <div class="content">
+            <div class="wrap">welcome</div>
+          </div>
+          <div class="imgs">
+            <div class="grid">
+              <div class="img img-1"><img src="images/img1.jpeg" /></div>
+              <div class="img img-2"><img src="images/img2.jpeg" /></div>
+              <div class="img img-3"><img src="images/img3.jpg" /></div>
+              <div class="img img-4"><img src="images/img4.png" /></div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="content">
+            <div class="wrap">to Dr Shahpari</div>
+          </div>
+          <div class="imgs">
+            <div class="grid">
+              <div class="img img-1"><img src="images/img7.jpg" /></div>
+              <div class="img img-2"><img src="images/img8.jpg" /></div>
+              <div class="img img-3"><img src="images/img9.jpg" /></div>
+              <div class="img img-4"><img src="images/42c65bda6a9ce091ce18a65614e5649e.jpg" /></div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="content">
+            <div class="wrap">website</div>
+          </div>
+          <div class="imgs">
+            <div class="grid">
+              <div class="img img-1"><img src="images/img10.jpg" /></div>
+              <div class="img img-2"><img src="images/img11.jpg" /></div>
+              <div class="img img-3"><img src="images/img12.jpg" /></div>
+              <div class="img img-4"><img src="images/img13.jpg" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+      <script>
+        function init() {
+          const slider = document.querySelector(".slider");
+          const nextBtn = slider.querySelector(".slider .nav .next");
+          const prevBtn = slider.querySelector(".slider .nav .prev");
+          const items = slider.querySelectorAll(".slider .item");
+    
+          let current = 0;
+    
+          items.forEach((item) => {
+            const textWrapper = item.querySelector(".wrap");
+            textWrapper.innerHTML = textWrapper.textContent.replace(
+              /\S/g,
+              "<span class='letter'>$&</span>"
+            );
+          });
+    
+          function anim(current, next, callback) {
+            const currentImgs = current.querySelectorAll(".img");
+            const currentText = current.querySelectorAll(".content .letter");
+            const nextImgs = next.querySelectorAll(".img");
+            const nextText = next.querySelectorAll(".content .letter");
+    
+            const t = 400;
+            const offset = "-=" + t * .4;
+            const imgOffset = t * .8;
+    
+            const tl = anime.timeline({
+              easing: "easeInOutQuint",
+              duration: t,
+              complete: callback
+            });
+    
+            tl.add({
+              targets: currentText,
+              translateY: [0, '-.75em'],
+              opacity: [1, 0],
+              easing: "easeInQuint",
+              duration: t,
+              delay: (el, i) => 10 * (i + 1)
+            })
+              .add(
+                {
+                  targets: currentImgs[0],
+                  translateY: -600,
+                  translateZ: 0,
+                  rotate: [0, '-15deg'],
+                  opacity: [1, 0],
+                  easing: "easeInCubic"
+                },
+                offset
+              )
+              .add(
+                {
+                  targets: currentImgs[1],
+                  translateY: -600,
+                  translateZ: 0,
+                  rotate: [0, '15deg'],
+                  opacity: [1, 0],
+                  easing: "easeInCubic"
+                },
+                "-=" + imgOffset
+              )
+              .add(
+                {
+                  targets: currentImgs[2],
+                  translateY: -600,
+                  translateZ: 0,
+                  rotate: [0, '-15deg'],
+                  opacity: [1, 0],
+                  easing: "easeInCubic"
+                },
+                "-=" + imgOffset
+              )
+              .add(
+                {
+                  targets: currentImgs[3],
+                  translateY: -600,
+                  translateZ: 0,
+                  rotate: [0, '15deg'],
+                  opacity: [1, 0],
+                  easing: "easeInCubic"
+                },
+                "-=" + imgOffset
+              )
+              .add({
+                targets: current,
+                opacity: 0,
+                visibility: 'hidden',
+                duration: 10,
+                easing: "easeInCubic"
+              })
+              .add(
+                {
+                  targets: next,
+                  opacity: 1,
+                  visibility: 'visible',
+                  duration: 10
+                },
+                offset
+              )
+              .add(
+                {
+                  targets: nextImgs[0],
+                  translateY: [600, 0],
+                  translateZ: 0,
+                  rotate: ['15deg', 0],
+                  opacity: [0, 1],
+                  easing: "easeOutCubic"
+                },
+                offset
+              )
+              .add(
+                {
+                  targets: nextImgs[1],
+                  translateY: [600, 0],
+                  translateZ: 0,
+                  rotate: ['-15deg', 0],
+                  opacity: [0, 1],
+                  easing: "easeOutCubic"
+                },
+                "-=" + imgOffset
+              )
+              .add(
+                {
+                  targets: nextImgs[2],
+                  translateY: [600, 0],
+                  translateZ: 0,
+                  rotate: ['15deg', 0],
+                  opacity: [0, 1],
+                  easing: "easeOutCubic"
+                },
+                "-=" + imgOffset
+              )
+              .add(
+                {
+                  targets: nextImgs[3],
+                  translateY: [600, 0],
+                  translateZ: 0,
+                  rotate: ['-15deg', 0],
+                  opacity: [0, 1],
+                  easing: "easeOutCubic"
+                },
+                "-=" + imgOffset
+              )
+              .add(
+                {
+                  targets: nextText,
+                  translateY: ['.75em', 0],
+                  translateZ: 0,
+                  opacity: [0, 1],
+                  easing: "easeOutQuint",
+                  duration: t * 1.5,
+                  delay: (el, i) => 10 * (i + 1)
+                },
+                offset
+              );
+          }
+    
+          let isPlaying = false;
+    
+          function updateSlider(newIndex) {
+            const currentItem = items[current];
+            const newItem = items[newIndex];
+    
+            function callback() {
+              currentItem.classList.remove("is-active");
+              newItem.classList.add("is-active");
+              current = newIndex;
+              isPlaying = false;
+            }
+    
+            anim(currentItem, newItem, callback);
+          }
+    
+          function next() {
+            if (isPlaying) return;
+            isPlaying = true;
+            const newIndex = current === items.length - 1 ? 0 : current + 1;
+            updateSlider(newIndex);
+          }
+    
+          function prev() {
+            if (isPlaying) return;
+            isPlaying = true;
+            const newIndex = current === 0 ? items.length - 1 : current - 1;
+            updateSlider(newIndex);
+          }
+    
+          nextBtn.onclick = next;
+          prevBtn.onclick = prev;
+        }
+    
+        document.addEventListener("DOMContentLoaded", init);
+    
+      </script>
+
+
+
+<!-- flipboxxxxxx -->
+
+<div class="wrapper">
+
+    <div class="cols">
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+                <div class="front"
+                    style="background-image: url(images/img14.jpg)">
+                    <div class="inner">
+                        <p> Download</p>
+                        <span> BIMکتاب مرجع </span>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                        
+                        <p> BIMکتاب مرجع </p>
+
+                        <h1>رایگان دانلود کنید</h1>
+
+                        <a href="https://drive.google.com/file/d/1i4Ls6Kf59vUrxEbQXVxV4A0eVTZSg5EA/view"><button class="btn btn-primary"> <i class="bi bi-bag"></i>دانلود</button></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+                <div class="front"
+                    style="background-image: url(images/img15.jpg)">
+                    <div class="inner">
+                        <p>ِDownload</p>
+                        <span>کتاب مرجع اقتصاد مسکن در سطح بین الملل</span>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                        <p>کتاب مرجع اقتصاد مسکن در سطح بین الملل</p>
+
+                        <h1>رایگان دانلود کنید</h1>
+
+                     <a href="https://anboohsazanmehrafarin.com/wp-content/uploads/2023/08/%DA%A9%D8%AA%D8%A7%D8%A8-%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-%D9%85%D8%B3%DA%A9%D9%86-%D8%AF%D8%B1-%D8%B3%D8%B7%D8%AD-%D8%A8%DB%8C%D9%86-%D8%A7%D9%84%D9%85%D9%84%D9%84.pdf">   <button class="btn btn-primary"> <i class="bi bi-bag"></i>دانلود</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+                <div class="front"
+                    style="background-image: url(images/img16.jpg)">
+                    <div class="inner">
+                        <p>Download</p>
+                        <span>کتاب مرجع قوانین کاریزما</span>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                        <p> قانون کاریزما+ 10 قانون فن بیان و سخنوری  </p>
+
+                        <h1>رایگان دانلود کنید </h1>
+
+                        <button class="btn btn-primary"> <i class="bi bi-bag"></i>دانلود</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button id="toggle-btn">Translate to Persian</button>
+<div class="responsive-box p">
+  <img src="images/img2.jpeg" alt="Example Image" class="responsive-image">
+  <div class="text-content p">
+      <h1>dr abozar ashahpari</h1>
+      <p id="paragraph">
+          Dr. Abuzar Shahpari is the largest developer of residential towers and the president of the Iranian Elite Association. He is the author and writer of 38 book titles, as well as the writer of 4 reference books. He has made significant contributions in the field of civil engineering in Iran by utilizing artificial intelligence. Dr. Abuzar Shahpari is considered a brilliant mind and a young Iranian elite who is full of innovative engineering ideas in the fields of civil engineering, construction, architecture, urban planning, urban management, beautification, tower construction, water treatment and desalination, electricity generation, solar energy, petrochemical and refinery construction, clinics and hospitals, office and commercial complexes, and tourism centers. He uses artificial intelligence to design smart cities with renewable energy and sustainable cities.
+          <br><br>
+          Dr. Abuzar Shahpari, in one of his speeches at the World Engineers Conference in the United Arab Emirates, stated: "Instead of relying on manual labor and old-fashioned methods, we must move toward modern sciences and artificial intelligence, utilizing the digital world that increases precision, speed, and quality. Artificial intelligence can be widely used in the construction industry." Dr. Abuzar Shahpari has been able to bring about significant changes in three main areas of engineering projects: design and planning, execution and construction, and maintenance and operation, by using artificial intelligence.
+          <br><br>
+          As the founder of Building Information Modeling (BIM) in Iran, Dr. Abuzar Shahpari has provided creative and optimized solutions to design challenges using artificial intelligence, machine learning algorithms, and neural networks during the design phase.
+      </p>
+  </div>
+</div>
+
+
+
+    
+
+
+
+
+    <script>
+      // English and Persian text content
+      const englishText = `
+          Dr. Abuzar Shahpari is the largest developer of residential towers and the president of the Iranian Elite Association. He is the author and writer of 38 book titles, as well as the writer of 4 reference books. He has made significant contributions in the field of civil engineering in Iran by utilizing artificial intelligence. Dr. Abuzar Shahpari is considered a brilliant mind and a young Iranian elite who is full of innovative engineering ideas in the fields of civil engineering, construction, architecture, urban planning, urban management, beautification, tower construction, water treatment and desalination, electricity generation, solar energy, petrochemical and refinery construction, clinics and hospitals, office and commercial complexes, and tourism centers. He uses artificial intelligence to design smart cities with renewable energy and sustainable cities.
+          <br><br>
+          Dr. Abuzar Shahpari, in one of his speeches at the World Engineers Conference in the United Arab Emirates, stated: "Instead of relying on manual labor and old-fashioned methods, we must move toward modern sciences and artificial intelligence, utilizing the digital world that increases precision, speed, and quality. Artificial intelligence can be widely used in the construction industry." Dr. Abuzar Shahpari has been able to bring about significant changes in three main areas of engineering projects: design and planning, execution and construction, and maintenance and operation, by using artificial intelligence.
+          <br><br>
+          As the founder of Building Information Modeling (BIM) in Iran, Dr. Abuzar Shahpari has provided creative and optimized solutions to design challenges using artificial intelligence, machine learning algorithms, and neural networks during the design phase.
+      `;
+
+      const persianText = `
+          دکتر ابوزر شاهپری بزرگترین سازنده برج های مسکونی و رئیس انجمن نخبگان ایران است. او نویسنده ۳۸ عنوان کتاب و همچنین نویسنده ۴ کتاب مرجع است. او در زمینه مهندسی عمران در ایران با استفاده از هوش مصنوعی مشارکت های قابل توجهی داشته است. دکتر ابوزر شاهپری به عنوان یک ذهن درخشان و یک نخبه جوان ایرانی پر از ایده‌های مهندسی نوآورانه در زمینه‌های مهندسی عمران، ساخت و ساز، معماری، برنامه‌ریزی شهری، مدیریت شهری، زیباسازی، ساخت برج‌ها، تصفیه و شیرین‌سازی آب، تولید برق، انرژی خورشیدی، پتروشیمی و ساخت پالایشگاه، کلینیک‌ها و بیمارستان‌ها، مجتمع‌های اداری و تجاری و مراکز گردشگری شناخته می‌شود. او از هوش مصنوعی برای طراحی شهرهای هوشمند با انرژی تجدیدپذیر و شهرهای پایدار استفاده می‌کند.
+          <br><br>
+          دکتر ابوزر شاهپری در یکی از سخنرانی‌های خود در کنفرانس جهانی مهندسان در امارات متحده عربی گفت: "به جای تکیه بر کار دستی و روش‌های قدیمی، باید به سمت علوم مدرن و هوش مصنوعی حرکت کنیم و از دنیای دیجیتال استفاده کنیم که دقت، سرعت و کیفیت را افزایش می‌دهد. هوش مصنوعی می‌تواند به طور گسترده در صنعت ساخت و ساز استفاده شود." دکتر ابوزر شاهپری توانسته است تغییرات قابل توجهی را در سه حوزه اصلی پروژه‌های مهندسی: طراحی و برنامه‌ریزی، اجرا و ساخت و نگهداری و بهره‌برداری، با استفاده از هوش مصنوعی ایجاد کند.
+          <br><br>
+          به عنوان بنیان‌گذار مدل‌سازی اطلاعات ساختمان (BIM) در ایران، دکتر ابوزر شاهپری راه‌حل‌های خلاقانه و بهینه‌ای برای چالش‌های طراحی با استفاده از هوش مصنوعی، الگوریتم‌های یادگیری ماشین و شبکه‌های عصبی در مرحله طراحی ارائه کرده است.
+      `;
+
+      // Track current language state
+      let isEnglish = true;
+
+      // Toggle translation
+      document.getElementById("toggle-btn").addEventListener("click", () => {
+          const paragraph = document.getElementById("paragraph");
+          if (isEnglish) {
+              paragraph.innerHTML = persianText; // Show Persian text
+              paragraph.classList.add("rtl"); // Apply RTL styling
+              document.getElementById("toggle-btn").textContent = "Translate to English";
+          } else {
+              paragraph.innerHTML = englishText; // Show English text
+              paragraph.classList.remove("rtl"); // Remove RTL styling
+              document.getElementById("toggle-btn").textContent = "Translate to Persian";
+          }
+          isEnglish = !isEnglish; // Toggle state
+      });
+  </script>
+
+  <!-- this is for button -->
+ 
+
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <div class="banner-content">
+            <h1 class="h11">download resume</h1>
+            <p class="p11">Explore amazing features and offers just for you!</p>
+            <!-- Button -->
+           <a href="https://drive.google.com/file/d/15NP2jvDcpc5OR_axEh4kj5mRsrcKGdxj/view" target="_blank"> <button class="animated-button">Click Me!</button></a>
+        </div>
+    </section>
+  
+  <!-- footer part -->
+  
+  <div class="content">
+  
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <p>We are a team of passionate individuals working on innovative solutions for the future.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index5.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="index7.html">Books</a></li>
+          
+                <li><a href="index6.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <ul class="social-links">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p class="p22">&copy; 2024 Your Company. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+
+
+</body>
+
+</html>
